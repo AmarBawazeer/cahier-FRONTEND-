@@ -1,0 +1,16 @@
+{
+  "env": {
+    "VITE_API_BASE_URL": "/api",
+    "VITE_BACKEND_URL": "https://cahier-production.up.railway.app/"
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://cahier-production.up.railway.app/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
